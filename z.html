@@ -1,0 +1,918 @@
+<div
+  id="rc-anchor-container"
+  class="rc-anchor rc-anchor-normal rc-anchor-light">
+  <div
+    id="recaptcha-accessible-status"
+    class="rc-anchor-aria-status"
+    aria-hidden="true">
+    Recaptcha requires verification.
+  </div>
+  <div class="rc-anchor-error-msg-container" style="display: none">
+    <span class="rc-anchor-error-msg" aria-hidden="true"></span>
+  </div>
+  <div class="rc-anchor-content">
+    <div class="rc-inline-block">
+      <div class="rc-anchor-center-container">
+        <div class="rc-anchor-center-item rc-anchor-checkbox-holder">
+          <span
+            class="recaptcha-checkbox goog-inline-block recaptcha-checkbox-unchecked rc-anchor-checkbox"
+            role="checkbox"
+            aria-checked="false"
+            id="recaptcha-anchor"
+            tabindex="0"
+            dir="ltr"
+            aria-labelledby="recaptcha-anchor-label"
+            ><div class="recaptcha-checkbox-border" role="presentation"></div>
+            <div
+              class="recaptcha-checkbox-borderAnimation"
+              role="presentation"></div>
+            <div class="recaptcha-checkbox-spinner" role="presentation">
+              <div class="recaptcha-checkbox-spinner-overlay"></div>
+            </div>
+            <div class="recaptcha-checkbox-checkmark" role="presentation"></div
+          ></span>
+        </div>
+      </div>
+    </div>
+    <div class="rc-inline-block">
+      <div class="rc-anchor-center-container">
+        <label
+          class="rc-anchor-center-item rc-anchor-checkbox-label"
+          aria-hidden="true"
+          role="presentation"
+          id="recaptcha-anchor-label"
+          ><span
+            aria-live="polite"
+            aria-labelledby="recaptcha-accessible-status"></span
+          >I'm not a robot</label
+        >
+      </div>
+    </div>
+  </div>
+  <div class="rc-anchor-normal-footer">
+    <div class="rc-anchor-logo-portrait" aria-hidden="true" role="presentation">
+      <div class="rc-anchor-logo-img rc-anchor-logo-img-portrait"></div>
+      <div class="rc-anchor-logo-text">reCAPTCHA</div>
+    </div>
+    <div class="rc-anchor-pt">
+      <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank"
+        >Privacy</a
+      ><span aria-hidden="true" role="presentation"> - </span
+      ><a href="https://www.google.com/intl/en/policies/terms/" target="_blank"
+        >Terms</a
+      >
+    </div>
+  </div>
+</div>
+* * // // // // // // // *********** - dialog box - // // // <> <>
+//-----------------------------------------------------------
+
+<div id="rc-imageselect" aria-modal="true" role="dialog">
+  <div class="rc-imageselect-response-field"></div>
+  <span class="rc-imageselect-tabloop-begin" tabindex="0"></span>
+  <div class="rc-imageselect-payload">
+    <div class="rc-imageselect-instructions">
+      <div class="rc-imageselect-desc-wrapper">
+        <div
+          class="rc-imageselect-desc-no-canonical"
+          style="width: 352px; font-size: 12px">
+          Select all squares with
+          <strong style="font-size: 28px">motorcycles</strong
+          ><span
+            class="rc-imageselect-carousel-instructions"
+            style="font-size: 14px"
+            >If there are none, click skip</span
+          >
+        </div>
+      </div>
+      <div class="rc-imageselect-progress"></div>
+    </div>
+    <div class="rc-imageselect-challenge">
+      <div
+        id="rc-imageselect-target"
+        class="rc-imageselect-target"
+        dir="ltr"
+        role="presentation"
+        aria-hidden="true">
+        <table class="rc-imageselect-table-44">
+          <tbody>
+            <tr>
+              <td
+                role="button"
+                tabindex="4"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="5"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="6"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="7"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                role="button"
+                tabindex="8"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="9"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="10"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="11"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                role="button"
+                tabindex="12"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="13"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="14"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="15"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                role="button"
+                tabindex="16"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="17"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="18"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="19"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rc-imageselect-incorrect-response" style="display: none">
+      Please try again.
+    </div>
+    <div aria-live="polite">
+      <div class="rc-imageselect-error-select-more" style="display: none">
+        Please select all matching images.
+      </div>
+      <div class="rc-imageselect-error-dynamic-more" style="display: none">
+        Please also check the new images.
+      </div>
+      <div class="rc-imageselect-error-select-something" style="display: none">
+        Please select around the object, or reload if there are none.
+      </div>
+    </div>
+  </div>
+  <div class="rc-footer">
+    <div class="rc-separator"></div>
+    <div class="rc-controls">
+      <div class="primary-controls">
+        <div class="rc-buttons">
+          <div class="button-holder reload-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-reload"
+              title="Get a new challenge"
+              value=""
+              id="recaptcha-reload-button"
+              tabindex="3"></button>
+          </div>
+          <div class="button-holder audio-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-audio"
+              title="Get an audio challenge"
+              value=""
+              id="recaptcha-audio-button"
+              tabindex="1"></button>
+          </div>
+          <div class="button-holder image-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-image"
+              title="Get a visual challenge"
+              value=""
+              id="recaptcha-image-button"
+              tabindex="0"
+              style="display: none"></button>
+          </div>
+          <div class="button-holder help-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-help"
+              title="Help"
+              value=""
+              id="recaptcha-help-button"
+              tabindex="2"></button>
+          </div>
+          <div class="button-holder undo-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-undo"
+              title="Undo"
+              value=""
+              id="recaptcha-undo-button"
+              tabindex="0"
+              style="display: none"></button>
+          </div>
+        </div>
+        <div class="verify-button-holder">
+          <button
+            class="rc-button-default goog-inline-block"
+            title=""
+            value=""
+            id="recaptcha-verify-button"
+            tabindex="0">
+            Skip
+          </button>
+        </div>
+      </div>
+      <div class="rc-challenge-help" style="display: none" tabindex="0"></div>
+    </div>
+  </div>
+  <span class="rc-imageselect-tabloop-end" tabindex="0"></span>
+</div>
+
+<div id="rc-imageselect" aria-modal="true" role="dialog">
+  <div class="rc-imageselect-response-field"></div>
+  <span class="rc-imageselect-tabloop-begin" tabindex="0"></span>
+  <div class="rc-imageselect-payload">
+    <div class="rc-imageselect-instructions">
+      <div class="rc-imageselect-desc-wrapper">
+        <div
+          class="rc-imageselect-desc-no-canonical"
+          style="width: 352px; font-size: 12px">
+          Select all squares with
+          <strong style="font-size: 28px">motorcycles</strong
+          ><span
+            class="rc-imageselect-carousel-instructions"
+            style="font-size: 14px"
+            >If there are none, click skip</span
+          >
+        </div>
+      </div>
+      <div class="rc-imageselect-progress"></div>
+    </div>
+    <div class="rc-imageselect-challenge">
+      <div
+        id="rc-imageselect-target"
+        class="rc-imageselect-target"
+        dir="ltr"
+        role="presentation"
+        aria-hidden="true">
+        <table class="rc-imageselect-table-44">
+          <tbody>
+            <tr>
+              <td
+                role="button"
+                tabindex="4"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="5"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="6"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="7"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: 0%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                role="button"
+                tabindex="8"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="9"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="10"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="11"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -100%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                role="button"
+                tabindex="12"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="13"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="14"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="15"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -200%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                role="button"
+                tabindex="16"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: 0%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="17"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: -100%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="18"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: -200%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+              <td
+                role="button"
+                tabindex="19"
+                class="rc-imageselect-tile"
+                aria-label="Image challenge">
+                <div class="rc-image-tile-target">
+                  <div
+                    class="rc-image-tile-wrapper"
+                    style="width: 95px; height: 95px">
+                    <img
+                      class="rc-image-tile-44"
+                      src="https://www.google.com/recaptcha/enterprise/payload?p=06AFcWeA5a2lUhJP-SJ0x1RAYBjlAcHDtoh4f7EQ7GaMVJepXchog788kyJanvyBXqFl2hTdcxQoD6tdsLrDE5II__8DauB9qlkVOEQmjKIAO3uAgxGtJbBPQygC074EeLzaIzHb0quUdtqvEHa5BoflqnDcETMtT8BhmDCjlG8o0UWfLOgSpRafekPYFAiMbr96-i0DJ9SljVf1-hS6K9xteJoqxfpPZaJYRpLEQnzSftmywIJ7AdVUk&amp;k=6LdZv1wpAAAAAMVffetEFKcBXO-ehzHtAHC-MQ00"
+                      alt=""
+                      style="top: -300%; left: -300%" />
+                    <div class="rc-image-tile-overlay"></div>
+                  </div>
+                  <div class="rc-imageselect-checkbox"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rc-imageselect-incorrect-response" style="display: none">
+      Please try again.
+    </div>
+    <div aria-live="polite">
+      <div class="rc-imageselect-error-select-more" style="display: none">
+        Please select all matching images.
+      </div>
+      <div class="rc-imageselect-error-dynamic-more" style="display: none">
+        Please also check the new images.
+      </div>
+      <div class="rc-imageselect-error-select-something" style="display: none">
+        Please select around the object, or reload if there are none.
+      </div>
+    </div>
+  </div>
+  <div class="rc-footer">
+    <div class="rc-separator"></div>
+    <div class="rc-controls">
+      <div class="primary-controls">
+        <div class="rc-buttons">
+          <div class="button-holder reload-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-reload"
+              title="Get a new challenge"
+              value=""
+              id="recaptcha-reload-button"
+              tabindex="3"></button>
+          </div>
+          <div class="button-holder audio-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-audio"
+              title="Get an audio challenge"
+              value=""
+              id="recaptcha-audio-button"
+              tabindex="1"></button>
+          </div>
+          <div class="button-holder image-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-image"
+              title="Get a visual challenge"
+              value=""
+              id="recaptcha-image-button"
+              tabindex="0"
+              style="display: none"></button>
+          </div>
+          <div class="button-holder help-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-help"
+              title="Help"
+              value=""
+              id="recaptcha-help-button"
+              tabindex="2"></button>
+          </div>
+          <div class="button-holder undo-button-holder">
+            <button
+              class="rc-button goog-inline-block rc-button-undo"
+              title="Undo"
+              value=""
+              id="recaptcha-undo-button"
+              tabindex="0"
+              style="display: none"></button>
+          </div>
+        </div>
+        <div class="verify-button-holder">
+          <button
+            class="rc-button-default goog-inline-block"
+            title=""
+            value=""
+            id="recaptcha-verify-button"
+            tabindex="0">
+            Skip
+          </button>
+        </div>
+      </div>
+      <div class="rc-challenge-help" style="display: none" tabindex="0"></div>
+    </div>
+  </div>
+  <span class="rc-imageselect-tabloop-end" tabindex="0"></span>
+</div>

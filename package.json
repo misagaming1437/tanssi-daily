@@ -24,8 +24,42 @@
     "typescript": "5.3.3"
   },
   "manifest": {
+    "manifest_version": 3,
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "scripting",
+      "storage"
+    ],
     "host_permissions": [
       "https://*/*"
+    ],
+    "web_accessible_resources": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "resources": [
+          "src/*"
+        ]
+      }
+    ],
+    "background": {
+      "service_worker": "../src/background.ts"
+    },
+    "action": {
+      "default_popup": "../src/popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://lfd.tanssi.network/*",
+          "https://twitter.com/i/oauth2/authorize*"
+        ],
+        "js": [
+          "../src/content-script.ts"
+        ]
+      }
     ]
   }
 }
